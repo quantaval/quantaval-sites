@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What you pay for growth: the PEG ratio, priced properly — QuantaVal</title>
+</head>
+<body>
+<main>
+<h1>What you pay for growth: the PEG ratio, priced properly</h1>
+<p>The plain <a href="https://quantaval.com/pe-multiples">P/E multiple</a> has a blind spot: it treats a company growing earnings at 20% a year and one growing at 2% as if they deserved the same price per dollar of earnings. Peter Lynch's fix was to divide the P/E by the growth rate. The result — the PEG ratio — answers a cleaner question: how much am I paying for each point of growth? QuantaVal's own <a href="https://quantaval.com/peg">PEG masterclass</a> uses Lynch's benchmarks: a PEG around 1.0 is fair, below 1.0 is cheap for the growth on offer, and above 2.0 means you are paying a large premium for every point.</p>
+<p><em>A P/E of 20 can be cheap and a P/E of 10 can be expensive. The difference is growth — and the PEG ratio is the tool that prices it.</em></p>
+<h2>The formulas</h2>
+<blockquote>
+<p>PEG = (Price ÷ EPS) ÷ EPS growth rate (%)</p>
+<p>Fair P/E = Target PEG × Growth</p>
+<p>Fair value per share = Target PEG × Growth × EPS</p>
+</blockquote>
+<p>Note that the growth rate enters in whole percent — 16, not 0.16. Get that wrong and every PEG you compute is off by a factor of 100.</p>
+<h2>Worked example (hypothetical)</h2>
+<p>Take a hypothetical company, Example Logistics Software Co. — invented for teaching only, not a real company.</p>
+<ul>
+<li>Share price: $48.00</li>
+<li>Earnings per share: $2.40 → <strong>P/E = 20.0x</strong></li>
+<li>Expected EPS growth: forward consensus says 16% a year; the last five years actually delivered 22%</li>
+</ul>
+<p>Which growth rate do you use? QuantaVal's rule is to take the <strong>lower</strong> of the consensus forecast and the historical record — forecasts are optimistic by profession — and to cap growth at 25% so one exceptional stretch cannot dominate the answer. Here that means 16%.</p>
+<blockquote><p>PEG = 20.0 ÷ 16 = <strong>1.25</strong></p></blockquote>
+<p>You are paying $1.25 for each point of growth, a quarter above Lynch's fair line. Run it backwards to a price: at a target PEG of 1.0, the fair P/E is 1.0 × 16 = 16.0x, so fair value = 16.0 × $2.40 = <strong>$38.40</strong>. The $48.00 price sits <strong>25% above</strong> that. Even at a more forgiving target PEG of 1.1 (fair P/E 17.6x), fair value is <strong>$42.24</strong> — still below the price. On this multiple, the growth is good but the price is better.</p>
+<h3>The whole verdict hangs on one input</h3>
+<table>
+<tr><th>EPS growth</th><th>PEG at $48.00</th><th>Fair value at PEG 1.0</th></tr>
+<tr><td>10%</td><td>2.00</td><td>$24.00</td></tr>
+<tr><td>12%</td><td>1.67</td><td>$28.80</td></tr>
+<tr><td>14%</td><td>1.43</td><td>$33.60</td></tr>
+<tr><td>16%</td><td>1.25</td><td>$38.40</td></tr>
+<tr><td>18%</td><td>1.11</td><td>$43.20</td></tr>
+<tr><td>20%</td><td>1.00</td><td>$48.00</td></tr>
+</table>
+<p>If growth comes in at 12% instead of 16%, the PEG at today's price jumps to 1.67 and fair value falls to $28.80. If the company actually delivers 20%, the price is exactly fair. Nothing else in the model moves — which is precisely the danger.</p>
+<h2>Why the growth estimate is the dangerous input</h2>
+<p>Growth sits inside the multiplier, so an error in growth is an error in the final price, undiluted. QuantaVal's masterclass puts it bluntly: overstating growth by five points inflates value by about a third — in the example above, assuming 21% instead of 16% lifts fair value by 31.2%. Three habits keep the input honest:</p>
+<ol>
+<li><strong>Use a multi-year rate, and the lower of forecast vs history.</strong> A single spectacular year is not a growth rate. The <a href="https://quantaval.com/equity-research">equity research terminal</a> shows the multi-year EPS record next to the forecasts, so the gap between the two is visible before you choose.</li>
+<li><strong>Check growth against what the business can self-fund.</strong> Earnings cannot compound faster than equity does forever; sustainable growth is anchored by <a href="https://quantaval.com/roe-calculator">ROE</a> times the retention rate. A PEG built on 20% growth from a company with a 10% ROE is quietly assuming outside capital.</li>
+<li><strong>Distrust a very low PEG.</strong> A PEG under 0.5 usually means the growth estimate is too high, not that the market is giving growth away. A stock at a P/E of 12 with claimed 20% growth shows a PEG of 0.60 — cheap-looking, and worth one hard question about the 20% before it is worth anything else.</li>
+</ol>
+<h2>When PEG fails</h2>
+<ul>
+<li><strong>Slow growers.</strong> A utility on a P/E of 10 growing at 2% shows a PEG of 5.0 — which reads as wildly expensive and is nothing of the sort. Below roughly 5% growth, the ratio stops being informative.</li>
+<li><strong>Negative or volatile earnings.</strong> A negative PEG has no valuation meaning, and a cyclical's peak-year EPS makes any growth rate built on it fiction.</li>
+<li><strong>Dividend payers.</strong> PEG prices earnings growth and ignores the yield entirely. For a payer, use <a href="https://quantaval.com/pegy">PEGY</a>, which adds the dividend yield to the growth rate — and check the yield itself with the <a href="https://quantaval.com/dividend-yield">dividend yield and payout calculator</a>.</li>
+<li><strong>As a standalone verdict.</strong> PEG says nothing about cash conversion, leverage or moat. A cheap PEG on a business whose earnings never become cash is a cheap ticket to a bad business; cross-check <a href="https://quantaval.com/roic-wacc">ROIC vs WACC</a> before acting.</li>
+</ul>
+<h2>Cross-checks before you act</h2>
+<p>PEG assumes a growth rate; the <a href="https://quantaval.com/reverse-dcf">reverse DCF</a> extracts the growth rate the price itself implies — if the market is pricing in 28% and your PEG used 16%, one of you is wrong and now you know by how much. Lynch's own valuation formula is a second opinion in the <a href="https://quantaval.com/peter-lynch">Peter Lynch fair value calculator</a>, and the <a href="https://quantaval.com/graham">Graham Number</a> marks the conservative floor that growth stocks are allowed to ignore only while the growth lasts. Set PEG beside a full <a href="https://quantaval.com/dcf-calculator">DCF</a> and against peer multiples in <a href="https://quantaval.com/relative-value">relative value</a>, then let the disagreement between models do the talking. Shortlists of growth names that already pass quality tests live in the <a href="https://quantaval.com/stock-ideas/tech-stocks">high-quality tech stock ideas</a>. QuantaVal runs 88 models in its <a href="https://quantaval.com/hybrid-engine">Hyper Engine</a> (62 in the free calculator), so no single ratio has to carry the decision.</p>
+<h2>Try it yourself</h2>
+<p>QuantaVal's <a href="https://quantaval.com/peg">free PEG calculator</a> loads a stock's live P/E and growth rate, shows the PEG and a fair value, and lets you change the target PEG and growth yourself. Visitors get 3 shared calculations a day, resetting at midnight UTC, no credit card required, and the full methodology is free to read. To screen for growth that is not already fully priced, the <a href="https://quantaval.com/screener">free stock screener</a> scans 2,000+ stocks on valuation and growth filters together. All 62 free tools sit in the <a href="https://quantaval.com/calculators">calculators index</a>.</p>
+<hr>
+<p><em>Figures in the worked example are illustrative, not a forecast for any real company, and nothing in this article is investment advice. Do your own research.</em></p>
+<p>— The QuantaVal team. <a href="https://quantaval.com/">QuantaVal</a> is a quantitative valuation engine: deterministic math from audited financial data, not opinions or headlines.</p>
+<p><a href="index.html">QuantaVal — Research and Study</a></p>
+</main>
+</body>
+</html>
